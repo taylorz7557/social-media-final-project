@@ -12,8 +12,8 @@ st.set_page_config(
 
 @st.cache_data
 def load_data():
-    df1 = pd.read_csv("Students_Social_Media_Addiction.csv")
-    df2 = pd.read_csv("Effect_of_Social_Media_On_Academic_Performance_of_Students_-_realistic_social_media_academic_impact.csv")
+    df1 = pd.read_csv("Students Social Media Addiction.csv")
+    df2 = pd.read_csv("Effect of Social Media On Academic Perf....csv")
 
     # df2: explode multi-platform column for platform analysis
     df2["Platform_List"] = df2["Platforms"].str.split(", ")
